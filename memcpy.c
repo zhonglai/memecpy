@@ -14,7 +14,7 @@ void* memcpy(void* dst, const void* src, size_t count)
     }
 
     // 判断 dst 拷贝 count 字节后是否会超越最大内存，从而反转到小内存
-    if （(dst > src) && (dst + count < src + count)）
+    if ((dst > src) && (dst + count < src + count))
     {
         printf("dst exist memory reversal");
         return NULL;
